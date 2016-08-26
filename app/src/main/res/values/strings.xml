@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">WhyGoSolo</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+
+    <!--  Strings related to Main Activity, Sign Up, Sign In -->
+    <string name="action_sign_up">Sign Up</string>
+    <string name="action_sign_in_intent">Already have an account? <b>Sign In</b></string>
+
+    <!-- Strings related to Sign Up Activity -->
+    <string name="email_hint">Email Address</string>
+    <string name="action_upload_img">Upload Image</string>
+    <string name="password_hint">Password</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="prompt_student_residence">Student Accommodation</string>
+    <string name="tc_switch">I agree with the <a href="http://www.google.com">T&amp;Cs</a></string>
+    <string name="title_activity_sign_in">Sign In</string>
+
+    <!-- Strings related to Sign In -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is invalid</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- String related to Forgot Password Activity -->
+    <string name="action_forgot_pass">Forgot your password?</string>
+
+    <string name="title_activity_forgot_password">Forgot Password</string>
+    <string name="action_reset_password">Reset Password</string>
+    <string name="rest_pass_description">A reset link will be sent to your email address, please
+        reset the password then login
+    </string>
+
+    <!--Strings related to MapsActivity -->
+    <string name="title_activity_maps">Map</string>
+    <string name="action_next">Next</string>
+
+    <!-- String related to EventsActivity -->
+    <string name="title_activity_events">EventsActivity</string>
+    <string name="card_title">CARD TITLE PLACEHOLDER:%1$s, %2$s, %3$s \n<b>%4$s</b></string>
+    <string name="organisers_name">ORGANISERS%1$s %2$s</string>
+    <string name="attendees">ATTENDEES%1$s Attendees (%2$s Friends) </string>
+    <string name="event_summary">A Place holder for the event summary. It has a 140 character limit
+        and must describe the event giving a time and location. Any more is extra</string>
+    <string name="join">Join</string>
+    <string name="action_create_event">Create Event</string>
+    <string name="action_user_profile">My Profile</string>
+    <string name="action_settings">Settings</string>
+    <string name="apply">Apply</string>
+    <string name="app_icon">App Icon</string>
+    <string name="action_filter">Filter</string>
+
+
+
+
+</resources>

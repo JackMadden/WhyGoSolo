@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sign_up_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/user_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img_test"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/upload_img"
+            android:text="@string/action_upload_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/first_name"
+            android:hint="@string/first_name_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="26"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/upload_img"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:hint="@string/last_name_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="26"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/first_name"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="26"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email_hint"
+            android:layout_below="@+id/last_name"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/map_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_student_residence"
+            android:onClick="getMapIntent"
+            android:layout_below="@+id/email"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_hint"
+            android:ems="26"
+            android:inputType="textPassword"
+            android:layout_below="@+id/map_button"
+            android:layout_centerHorizontal="true" />
+
+        <Switch
+            android:id="@+id/tc_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_toRightOf="@+id/upload_img"
+            android:layout_toEndOf="@+id/upload_img" />
+        <TextView
+            android:id="@+id/switch_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tc_switch"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/tc_switch"
+            android:layout_toStartOf="@id/tc_switch"
+            android:layout_alignBottom="@id/tc_switch"
+            android:layout_below="@id/password" />
+
+        <Button
+            android:id="@+id/create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="createAccount"
+            android:text="@string/action_sign_up"
+            android:layout_marginBottom="16dp"
+            android:layout_below="@id/tc_switch"
+            android:layout_alignRight="@+id/signIn"
+            android:layout_alignEnd="@+id/signIn"
+            android:layout_alignLeft="@+id/signIn"
+            android:layout_alignStart="@+id/signIn"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/action_sign_in_intent"
+            android:id="@+id/signIn"
+            android:onClick="signInIntent"
+            android:layout_below="@+id/create_account"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/accomodation"
+            android:layout_above="@+id/password"
+            android:layout_toRightOf="@+id/map_button"
+            android:layout_toEndOf="@+id/map_button" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/latitude"
+            android:layout_above="@+id/password"
+            android:layout_toRightOf="@+id/accomodation"
+            android:layout_toEndOf="@+id/accomodation" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/longitude"
+            android:layout_above="@+id/password"
+            android:layout_toRightOf="@+id/latitude"
+            android:layout_toEndOf="@+id/latitude" />
+
+    </RelativeLayout>
+</ScrollView>
